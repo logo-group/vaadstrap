@@ -1,4 +1,4 @@
-package com.sebworks.vaadstrap;
+package com.lbs.vaadin.bootstrap;
 
 import com.vaadin.shared.ui.ContentMode;
 import com.vaadin.ui.Label;

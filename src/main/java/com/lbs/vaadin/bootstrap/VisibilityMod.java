@@ -1,4 +1,4 @@
-package com.sebworks.vaadstrap;
+package com.lbs.vaadin.bootstrap;
 
 import java.util.Locale;
 
@@ -14,7 +14,7 @@ public enum VisibilityMod implements Style {
 	HIDDEN_XS, HIDDEN_SM, HIDDEN_MD, HIDDEN_LG,
 
 	VISIBLE_PRINT, VISIBLE_PRINT_BLOCK, VISIBLE_PRINT_INLINE, VISIBLE_PRINT_INLINE_BLOCK,
-	HIDDEN_PRINT,;
+	HIDDEN_PRINT;
 
 	@Override
 	public String getStyleName() {

@@ -1,4 +1,4 @@
-package com.sebworks.vaadstrap;
+package com.lbs.vaadin.bootstrap;
 
 import java.util.Locale;
 

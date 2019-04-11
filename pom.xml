@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.sebworks</groupId>
-	<artifactId>vaadstrap</artifactId>
+	<groupId>com.lbs</groupId>
+	<artifactId>vaadin-bootstrap</artifactId>
 	<packaging>jar</packaging>
-	<version>0.2.1</version>
-	<name>VaadStrap</name>
-	<description>Bootstrap Grid System for Vaadin</description>
+	<version>0.3.7-SNAPSHOT</version>
+	<name>Vaadin Bootstrap</name>
+	<description>Bootstrap System for Vaadin</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,17 +31,17 @@
 			<name>Selim Eren Bekçe</name>
 			<email>seb@sebworks.com</email>
 		</developer>
+		<developer>
+			<name>Samet Sevim</name>
+			<email>samet.sevim@logo.com.tr</email>
+		</developer>
 	</developers>
 
 	<scm>
-		<url>git://github.com/bekce/vaadstrap.git</url>
-		<connection>scm:git:git://github.com/bekce/vaadstrap.git</connection>
+		<url>git://github.com/logobs/vaadstrap.git</url>
+		<connection>scm:git:git://github.com/logobs/vaadstrap.git</connection>
 	</scm>
 
-	<issueManagement>
-		<system>GitHub</system>
-		<url>https://github.com/sebgymn/vaadstrap/issues</url>
-	</issueManagement>
 
 	<licenses>
 		<license>
@@ -49,7 +49,12 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<url>http://nexus.logo.com.tr:8081/nexus/content/repositories/snapshots/</url>
+		</repository>
+	</distributionManagement>
 	<repositories>
 		<repository>
 			<id>vaadin-addons</id>

@@ -1,13 +1,19 @@
-package com.sebworks.vaadstrap;
+package com.lbs.vaadin.bootstrap;
 
+import com.vaadin.ui.Component;
 import com.vaadin.ui.CssLayout;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author seb
  */
 public class Row extends CssLayout {
 
+	List<Col> columnList;
 	public Row() {
+		columnList = new ArrayList<>();
 		clearStyles();
 	}
 
@@ -22,6 +28,7 @@ public class Row extends CssLayout {
 	public Col addNewCol(Style... styles) {
 		Col col = new Col(styles);
 		addComponent(col);
+		columnList.add(col);
 		return col;
 	}
 
@@ -41,6 +48,7 @@ public class Row extends CssLayout {
 		 */
 	public Row addCol(Col col){
 		addComponent(col);
+		columnList.add(col);
 		return this;
 	}
 
@@ -66,4 +74,15 @@ public class Row extends CssLayout {
 		return this;
 	}
 
+	public List<Col> getColumnList() {
+		return columnList;
+	}
+
+	@Override
+	public void removeComponent(Component c) {
+		super.removeComponent(c);
+		if(c instanceof Col) {
+			columnList.remove(c);
+		}
+	}
 }
