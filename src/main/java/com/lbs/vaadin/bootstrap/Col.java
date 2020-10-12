@@ -150,13 +150,11 @@ public class Col extends CssLayout {
 	}
 
 	public Integer getThresholdRatio(Threshold threshold){
-		if(styleMap == null) {
-			extractStyles(getStyleName());
-		}
+
 		if(!styleMap.containsKey(threshold)) return 0;
 		return styleMap.get(threshold);
 	}
-	public String generateStyleString(int xlRatio, int lgRatio, int mdRatio, int smRatio, int xsRatio, String additionalStyles)
+	public String generateStyleString(int lgRatio, int mdRatio, int smRatio, int xsRatio, String additionalStyles)
 	{
 
 		return  "col-lg-" + (lgRatio > 12
